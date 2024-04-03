@@ -1,0 +1,57 @@
+<!--Olivia Hiltebeitel-->
+<!--Liv's Bicycle Contact Page-->
+<!--Southern Illinois University-->
+<!--Date Developed: February 20, 2024-->
+<!--Date Tested: February 25, 2024-->
+
+<!--sets document type to html-->
+<!DOCTYPE html>
+
+<!--sets the language to english-->
+<html lang="en">
+
+<!--sets up the document including linking stylesheets, scripts, description, keywords, viewports-->
+    <head>
+        <meta charset="utf-8">
+        <title>Liv's Bicycle Contact</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            })
+        </script>
+
+        <meta name="description" content="Liv's Bicycle Contact"> 
+        <meta name="keywords" content="liv's, bicycle, contact">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>    
+                </header>
+
+        <h1>Liv's Bicycle Shop</h1>                                                               <!--main heading of the website-->
+        <p id="image1"></p>
+            
+            
+        <!--Navigation Menu-->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sales.html">Sales</a></li> 
+                <li><a href="rentals.html" >Rentals</a></li>
+                <li><a href="services.html" >Services</a></li> 
+                <li><a href="contact.html" class="current" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/phone.png">
+    
+
+    </body>
+
+</html>
