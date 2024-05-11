@@ -1,0 +1,219 @@
+<!--Olivia Hiltebeitel
+    Final Project
+    Liv's Athletic Store
+    Products Page
+    Date Developed: May 7, 2024
+    Date Tested: May 10, 2024
+    -->
+<!--sets document as html-->
+<!DOCTYPE html>
+<!--sets language to english-->
+<html lang="en">
+    <!--establishes the website and links stylesheets and slicknav-->
+    <head>
+        <meta charset="utf-8">
+        <title>Liv's Athletic Products Page</title>
+        <link rel="icon" href="images/bicep_icon.jpeg">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            })
+        </script>
+        <!--meta characteristics that provides a description, keywords, and viewport-->
+        <meta name="description" content="An athletic store's products page that has everything we sell and prices as well">
+        <meta name="keywords" content="liv, liv's, sport, sports, athlete, equipment, products">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+
+    <body>
+        <header>
+        </header>
+
+        <h1 class="title">Liv's Athletic Store</h1>
+        <p id="image1"></p>
+        <!--nav menu-->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html" class="current">Products</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+
+        <figcaption>Liv's Athletic Products</figcaption>
+        <!--adds a table to the page-->
+        <table>
+            <legend>Products</legend>
+
+                <tr>
+                    <th class="left">Sport</th>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td class="left">Softball</td>
+                    <td>Softball Bat</td>
+                    <td>Aluminum softball bat with cushioned grip handle.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td class="left">Softball</td>
+                    <td>Softball Glove</td>
+                    <td>12-inch leather softball glove with deep pocket design.</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td class="left">Softball</td>
+                    <td>Softball Cleats</td>
+                    <td>Molded rubber cleats with traction pattern for grip on field.</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td class="left">Softball</td>
+                    <td>Softball Helmet</td>
+                    <td>Protective softball helmet with adjustable chin strap.</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td class="left">Softball</td>
+                    <td>Softball Jersey</td>
+                    <td>Moisture-wicking softball jersey with team logo.</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td class="left">Football</td>
+                    <td>Football</td>
+                    <td>Official size and weight football for game play.</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td class="left">Football</td>
+                    <td>Football Cleats</td>
+                    <td>High-top football cleats with molded studs for traction.</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td class="left">Football</td>
+                    <td>Football Helmet</td>
+                    <td>Protective football helmet with facemask and chin strap.</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td class="left">Football</td>
+                    <td>Football Jersey</td>
+                    <td>Replica football jersey with team colors and logo.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td class="left">Football</td>
+                    <td>Football Pants</td>
+                    <td>Padded football pants with integrated belt for secure fit.</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td class="left">Baseball</td>
+                    <td>Baseball Bat</td>
+                    <td>Aluminum baseball bat with cushioned grip handle.</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td class="left">Baseball</td>
+                    <td>Baseball Glove</td>
+                    <td>11.5-inch leather baseball glove with deep pocket design.</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td class="left">Baseball</td>
+                    <td>Baseball Cleats</td>
+                    <td>Molded rubber cleats with traction pattern for grip on field.</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td class="left">Baseball</td>
+                    <td>Baseball Helmet</td>
+                    <td>Protective baseball helmet with adjustable chin strap.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td class="left">Baseball</td>
+                    <td>Baseball Jersey</td>
+                    <td>Moisture-wicking baseball jersey with team logo.</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td class="left">Soccer</td>
+                    <td>Soccer Ball</td>
+                    <td>Official size and weight soccer ball for match play.</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td class="left">Soccer</td>
+                    <td>Soccer Cleats</td>
+                    <td>Firm ground soccer cleats with synthetic upper for durability.</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td class="left">Soccer</td>
+                    <td>Soccer Goal</td>
+                    <td>Portable soccer goal with steel frame and net.</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td class="left">Soccer</td>
+                    <td>Soccer Jersey</td>
+                    <td>Replica soccer jersey with moisture-wicking fabric.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td class="left">Soccer</td>
+                    <td>Soccer Shorts</td>
+                    <td>Lightweight soccer shorts with elastic waistband.</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td class="left">Volleyball</td>
+                    <td>Volleyball</td>
+                    <td>Official size and weight volleyball for match play.</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td class="left">Volleyball</td>
+                    <td>Volleyball Shoes</td>
+                    <td>Lightweight volleyball shoes with cushioned midsole.</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td class="left">Volleyball</td>
+                    <td>Volleyball Knee Pads</td>
+                    <td>Protective volleyball knee pads with moisture-wicking fabric.</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td class="left">Volleyball</td>
+                    <td>Volleyball Net</td>
+                    <td>Regulation size volleyball net with steel cable and nylon mesh.</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td class="left">Volleyball</td>
+                    <td>Volleyball Shorts</td>
+                    <td>Quick-drying volleyball shorts with elastic waistband.</td>
+                    <td>$25</td>
+                </tr>
+                
+                
+        </table>
+    </body>
+
+</html> 

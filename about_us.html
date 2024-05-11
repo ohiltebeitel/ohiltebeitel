@@ -1,0 +1,88 @@
+<!--Olivia Hiltebeitel
+    Final Project
+    Liv's Athletic Store
+    About Us Page
+    Date Developed: May 7, 2024
+    Date Tested: May 10, 2024
+    -->
+ <!--sets document as html-->
+<!DOCTYPE html>
+ <!--sets language to english-->   
+<html lang="en">
+    <!--establishes the website and links stylesheets and slicknav-->
+    <head>
+        <meta charset="utf-8">
+        <title>Liv's Athletic About Us Page</title>
+        <link rel="icon" href="images/bicep_icon.jpeg">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            })
+        </script>
+        <!--meta characteristics that provides a description, keywords, and viewport-->
+        <meta name="description" content="An athletic store's about us page that dives deeper
+        into our employees and history">
+        <meta name="keywords" content="liv, liv's, sport, sports, athlete, equipment, about, us">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+        <header>
+        </header>
+
+        <h1 class="title">Liv's Athletic Store</h1>
+        <p id="image1"></p>
+        <!--nav menu-->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="about_us.html" class="current">About Us</a></li>
+                <li><a href="contact.html" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+        <!--adds a video to the page that has controls for user-->
+        <video src="video/sports.mp4"     
+            width="375"
+            height="250"
+            autoplay
+            preload="auto"
+            controls>
+        </video>
+        <h1>About Us</h1>
+        <p>We created this store because we want to provide sports equipment for a reasonable price!
+            We know how expensive equipment can be and it will add up quickly, so we wanted
+            to help out our community. Recently we started to provide lessons because 
+            we knew we could provide more for the youth! Our goal is to support all athletes!
+        </h3>
+        <h2>Employees:</h2>
+        <!--two column layout-->
+        <!--first column-->
+        <main>
+            <h3>John</h3>
+            <img src="images/man1.jpeg" alt="">
+            <h3>Ashley</h3>
+            <img src="images/woman1.jpeg" alt="">
+            <h3>Mike</h3>
+            <img src="images/man2.jpeg" alt="">
+        </main>
+        <!--second column-->
+        <aside>
+            <h3>Olivia</h3>
+            <img src="images/woman2.jpeg" alt="">
+            <h3>Zach</h3>
+            <img src="images/man3.jpeg" alt="">
+            <h3>Hannah</h3>
+            <img src="images/woman3.jpeg" alt="">
+        </aside>
+    
+    </body>
+
+</html> 

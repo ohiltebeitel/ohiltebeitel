@@ -1,0 +1,85 @@
+<!--Olivia Hiltebeitel
+    Final Project
+    Liv's Athletic Store
+    Lessons Page
+    Date Developed: May 7, 2024
+    Date Tested: May 10, 2024
+    -->
+<!--sets document as html-->
+<!DOCTYPE html>
+<!--sets language to english-->
+<html lang="en">
+    <!--establishes the website and links stylesheets and slicknav-->
+    <head>
+        <meta charset="utf-8">
+        <title>Liv's Athletic Lessons Page</title>
+        <link rel="icon" href="images/bicep_icon.jpeg">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            })
+        </script>
+        <!--meta characteristics that provides a description, keywords, and viewport-->
+        <meta name="description" content="An athletic store's lessons page that fives details about the lessons we provide">
+        <meta name="keywords" content="liv, liv's, sport, sports, athlete, equipment, lessons">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+
+    <body>
+        <header>
+        </header>
+
+        <h1 class="title">Liv's Athletic Store</h1>
+        <p id="image1"></p>
+        <!--nav menu-->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="lessons.html" class="current">Lessons</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Liv's Lessons</h1>
+        <!--uses a two column layout-->
+        <!--first column-->
+        <main>
+            <h2>Softball</h2>
+            <h3>Trainer: Alex</h3>
+            <p>Alex is a former softball player who went to college at Duke University.
+                She played 3rd base in college but knows how to play all positions!
+            </p>
+            <h3>Description: Lessons are one to two hours long and can consist of fielding and hitting depending on what the client wants to focus on.
+                Pitching is not included. Alex is willing to travel but nothing that is more than two hours away. 
+                Equipment is included but client is expected to have a glove and bat of their own.
+            </h3>
+            <h3>Price: $100 for the first hour and $25 for the second.</h3>
+            <p>Call (217) 227-4428 if interested!</p>
+        </main>
+        <!--second column-->
+        <aside>
+            <h2>Football</h2>
+            <h3>Trainer: Doug</h3>
+            <p>Doug has played football for 20 plus years starting when he was 4.
+                He was the starting quaterback in high school and led his team to a championship!
+            </p>
+            <h3>Description: Lessons are one to two hours long and all you have to bring is yourself!
+                Doug can help with offense and defense depending on what the client wants to focus on.
+                He is willing to travel but no more than two and a half hours. Safety equipment is not
+                required but recommended!
+            </h3>
+            <h3>Price: $125 for first hour and $25 for the second.</h3>
+            <p>Call (217) 227-4428 if interested!</p>
+        </aside>
+    </body>
+
+</html> 
