@@ -1,0 +1,254 @@
+/*Olivia Hiltebeitel
+  Final Project
+  Liv's Athletic Store
+  Main CSS Page
+  Date Developed: May 7, 2024
+  Date Tested: May 10, 2024*/
+
+
+
+/* sets up media queries so webiste can be displayed well on different screens and devices */
+@media only screen and (max-width: 2024px) { 
+    #mobile_menu { display: none; }    
+}
+
+@media only screen and (max-width: 959px) { 
+    #mobile_menu { display: none; } 
+}
+
+@media only screen and (max-width: 767px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }       
+    header h3 { font-size: .8125em; }    
+    p { font-size: .875em; }            
+    article h1, main h2, aside h2
+        { font-size: 1em; }            
+    aside li { font-size: .875em; }     
+    
+}
+
+@media only screen and (max-width: 479px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }   
+    header h3 { font-size: .8125em; }    
+    p { font-size: .875em; }             
+    article h1, main h2, aside h2 
+        { font-size: 1em; }              
+    aside li { font-size: .875em; }      
+  
+}
+
+/*centers the entire page and makes the background color lightblue */
+html {
+    margin: 10px;                           
+    position: center;
+    background-color: lightblue
+}
+/*padding controls space inside an element */
+h1 {
+    padding: 10px;                          
+}
+
+h2 {
+    padding: 10px;                          
+}
+
+h3 {
+    padding: 10px;
+}
+
+p {
+    padding-right: 5px;                     
+    padding-left: 5px;                      
+}
+/*sets up the contents of the page */
+body {
+    width: 90%;                          
+    max-width: 1024px;
+    margin: 10px auto;                     
+    background-color: lightgray;
+}
+
+/* added */ 
+header {
+    width: 97.917%;
+    padding: 10px 1.0417%;
+    clear: both;
+    font-size: 2em;
+}
+
+/* image but it is in a class so it doesn't affect other images
+adds a border and centers image */
+#image1 {
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    border: 5px solid ;                                 
+    border-radius: 50px;                                     
+    background-image: url("../images/logo.png");
+    background-size: 500px;  
+    background-position: center;  
+    background-repeat: no-repeat;
+
+}
+/*if a user hovers over the image it will transition into a new image
+once user moves mouse it will transition back to original image */
+#image1:hover {                                               /* once user hovers over image it will change to a new image */
+    background-image: url("../images/sports.jpeg");
+    background-size: 500px;
+    background-position: center;
+}
+/*indents the list */
+ul {
+    padding-left: 20px;                     
+}
+/*indents items in the list */
+li {
+    padding-left: 20px;                     
+}
+/*layout of the first column  */
+main {                                      
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    background-color: lightgray;
+    float: left;
+
+}
+/*layout of the second column */
+aside {                                    
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    background-color: lightgray;
+    float: right;
+}
+
+/*adds a border to the footer and centers it */
+footer {                                  
+    clear: both;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+/*layout for the figcaption of the table */
+figcaption {                              
+    display: block;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+/*centers the legend of the table */
+legend{
+    text-align: center;
+}
+/*adds a dashed border to the table */
+table, th, td {                          
+    border: 1px dashed;
+}
+/*layout for the table */
+table {                                  
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding-top: .5em;
+    margin: auto;
+}
+/*aligns the margins for the table */
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+/*layout for the legend of the table */
+legend {                                 
+    color: black; 
+    font-weight: bold; 
+    font-size: 1.5em; 
+    margin-bottom: .5em;
+}
+/*lines 173 through 217 is the layout for the form
+on the contact page */
+label, input, select {
+    font-size: 90%;
+}
+
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+input {
+    float: left;
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+select {
+    float: left;
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+input:required, input[required]
+{
+    border: 3px solid red;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+br {
+    clear: both;
+}
+
+#buttons input {
+    width: 10em;
+    float: right;
+    text-align: left;
+}
+/*centers the video */
+ video{
+    display: block;
+    margin: auto;
+}
+/*layout for images on about us page */
+img{
+    width: 100px;
+    height: 125px;
+    align-items: right;
+}
+
+radio {
+    float: left;
+    width: 9em;
+}
+/*centers liv's athletic store on every page */
+.title{
+    text-align: center;
+}
+
+/* sets up the navigation menu in the document */
+#nav_menu ul {
+    list-style-type: none; padding: 1em 0;
+    font-size: 1.5em;
+    text-align: center;
+    } 
+#nav_menu ul li { 
+   display: inline; 
+   padding: 0 1em; } 
+#nav_menu ul li a { 
+   font-weight: bold; 
+   color: black; }
+#nav_menu ul li a.current { text-decoration: none; }
+
